@@ -47,12 +47,14 @@ function Nav({ user, notification }) {
   const items = [
     // {
     //   key: '',
-    //   icon: <img src='' />,
+    //   icon: <img src='https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/326389384_898057077994777_6756464218359208492_n.png?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEg9cBw5Soi6yfdDkcKQSMWp3CHWaADEPSncIdZoAMQ9Gsixd7wsF_dzAka7CG-NkTxpBBfui-nG2gonEnB28iL&_nc_ohc=QdH7XeW_oDIAX-VSU_L&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfATtRYbiIvpLBQc8i6-yWlPkqYgFDG3fqc0HXmEZ4MbXw&oe=659B7CAF' style={{width: '10%', }} />,
     // },
     {
-      label: 'HOME',
+      // label: 'HOME',
       key: '',
-      icon: <HomeOutlined />,
+      icon: <img src='https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/326389384_898057077994777_6756464218359208492_n.png?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEg9cBw5Soi6yfdDkcKQSMWp3CHWaADEPSncIdZoAMQ9Gsixd7wsF_dzAka7CG-NkTxpBBfui-nG2gonEnB28iL&_nc_ohc=QdH7XeW_oDIAX-VSU_L&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfATtRYbiIvpLBQc8i6-yWlPkqYgFDG3fqc0HXmEZ4MbXw&oe=659B7CAF' style={{width: '10%', }} />,
+      style: {maxWidth: 'min-content'}
+      // icon: <HomeOutlined />,
     },
     {
       label: 'CART',
@@ -73,7 +75,7 @@ function Nav({ user, notification }) {
     user ?
       {
         label:
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{ display: 'block', justifyContent: 'center', alignItems: 'center' }}>
             {
               user?.avt ? <Avatar src={user?.avt} style={{ marginRight: 10 }} /> : <Avatar style={{ marginRight: 10 }} icon={<UserOutlined />} />
             }

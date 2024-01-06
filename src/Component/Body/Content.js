@@ -196,7 +196,7 @@ function Content({ user, notification, addToCart }) {
                                     style={{
                                         width: 280,
                                         height: 405,
-                                        paddingBottom: 10,
+                                        // paddingBottom: 10,
                                         marginBottom: 20,
                                         marginRight: 10,
                                         marginLeft: 10

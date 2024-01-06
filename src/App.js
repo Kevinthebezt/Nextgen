@@ -92,8 +92,13 @@ function App() {
         if (!find) {
           isCart.push(cart);
         }
+
+
         localStorage.setItem(`carts${user?.uid}`, JSON.stringify(isCart));
         return !find ? notification('success', 'Added successfully') : ''
+        // return db.collection('users').doc(user.uid).set({
+        //   cart : JSON.stringify(isCart),
+        // })
       } else {
         localStorage.setItem(`carts${user?.uid}`, JSON.stringify([cart]));
         return notification('success', 'Added successfully');

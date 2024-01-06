@@ -8,6 +8,7 @@ import { Empty } from 'antd';
 import emptyCart from "../../images/emptyCart.png"
 import Swal from 'sweetalert2'
 
+
 function Cart({ user, notification }) {
     const history = useHistory();
 
@@ -93,18 +94,18 @@ function Cart({ user, notification }) {
         <div className='cart-container' style={{ minHeight: screenHeight }}>
             {
                 dataCart?.length > 0 ?
-                <div style={{ display: 'flex', flexDirection: 'column', marginBottom:'30px' }}>
-                    <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-                        <div>
-                            <h1 style={{ color: 'white' }}>Your cart</h1>
-                            <Button style={{ backgroundColor: '#B8860B', width: '100px', color: 'white' }} onClick={() => history.push("/checkout")}>Check Out</Button>
+                    <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '30px' }}>
+                        <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+                            <div>
+                                <h1 style={{ color: 'white' }}>Your cart</h1>
+                                <Button style={{ backgroundColor: '#B8860B', width: '100px', color: 'white' }} onClick={() => history.push("/checkout")}>Check Out</Button>
+                            </div>
+                            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+                                <h3 style={{ color: 'white' }}>Subtotal money:&nbsp;</h3>
+                                <h3 style={{ color: 'white' }}>{totalMoney().toLocaleString()}$</h3>
+                            </div>
                         </div>
-                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
-                            <h3 style={{ color: 'white' }}>Subtotal money:&nbsp;</h3>
-                            <h3 style={{ color: 'white' }}>{totalMoney().toLocaleString()}$</h3>
-                        </div>
-                    </div>
-                </div> : ''
+                    </div> : ''
             }
 
             <div className='gameList' >
@@ -118,12 +119,12 @@ function Cart({ user, notification }) {
                                 style={{
                                     width: 280,
                                     height: 405,
-                                    paddingBottom: 10,
+                                    // paddingBottom: 10,
                                     marginBottom: 20,
                                     marginRight: 20,
                                 }}
                                 cover={
-                                    <img alt={item?.thumbnail} src={item?.thumbnail} onClick={() => history.push(`/game/${item?.id}`)}/>
+                                    <img alt={item?.thumbnail} src={item?.thumbnail} onClick={() => history.push(`/game/${item?.id}`)} />
                                 }
                                 actions={[
                                     <span style={{ fontWeight: '500', color: 'white' }}>Price: {(item?.id * 23).toLocaleString()}$</span>,
