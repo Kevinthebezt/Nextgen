@@ -119,11 +119,14 @@ const Checkout = ({ user, notification }) => {
                         <div className='checkout-total'>
                             Total: {discountedMoney()}$
                         </div>
+                        <Button type="primary" disabled block style={{ backgroundColor: '#40424A', width: '110px', color: '#5E6067', marginTop: '20px', border: '#797A82'}} >
+                            Check out
+                        </Button>
                     </div>
                     <div className="title-total" style={{ paddingLeft: '50px', paddingTop: '20px' }}>
                         <div className="title">Checkout</div>
                         <div className='checkout-products-container'>
-                        <Divider style={{ backgroundColor: 'black', margin: '10px' }} />
+                            <Divider style={{ backgroundColor: 'black', margin: '10px' }} />
                             {
                                 dataCart?.length > 0 ? dataCart?.map((item) => {
                                     return (

@@ -43,24 +43,24 @@
   }
 
 .ant-empty-description {
-    color: gray !important;
+    color: #d1d1d1 !important;
 }
 
 .statistic {
     width: 100%;
-    color: gray !important;
+    color: #d1d1d1 !important;
     background-color: #252730 !important;
     padding: 4px;
     border-radius: 10px;
 }
 
 .ant-statistic-content {
-    color: #b1b1b5 !important;
+    color: #d1d1d1 !important;
 }
 
 .ant-statistic-title {
     font-size: 20px !important;
-    color: #7e8188 !important;
+    color: #d1d1d1 !important;
 }
 
 /* .anticon {

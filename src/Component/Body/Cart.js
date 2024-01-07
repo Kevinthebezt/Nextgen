@@ -98,7 +98,7 @@ function Cart({ user, notification }) {
                         <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
                             <div>
                                 <h1 style={{ color: 'white' }}>Your cart</h1>
-                                <Button style={{ backgroundColor: '#B8860B', width: '100px', color: 'white' }} onClick={() => history.push("/checkout")}>Check Out</Button>
+                                <Button style={{ backgroundColor: '#252730', width: '100px', color: 'white' }} onClick={() => history.push("/checkout")}>Check Out</Button>
                             </div>
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
                                 <h3 style={{ color: 'white' }}>Subtotal money:&nbsp;</h3>

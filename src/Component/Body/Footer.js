@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'antd';
 import { useHistory } from 'react-router-dom';
-import {InstagramOutlined, FacebookFilled} from '@ant-design/icons';
+import {InstagramOutlined, FacebookOutlined, MailOutlined } from '@ant-design/icons';
 
 
 function Footer({ user, notification }) {
@@ -77,7 +77,9 @@ function Footer({ user, notification }) {
                                 <InstagramOutlined style={{fontSize: "300%", color:'#b1014c'}}/>
                             </a>
                             <a href='https://www.facebook.com/profile.php?id=100040202079254'>
-                                <FacebookFilled style={{fontSize: "300%", color:'#0866ff', paddingLeft: '5px'}}/>
+                                <FacebookOutlined style={{fontSize: "300%", color:'#0866ff', paddingLeft: '10px'}}/>
+                            </a>                            <a href='https://mail.google.com/mail/u/0/#inbox?compose=jrjtXDzgdjwvSRpsgrCJCJtPpSkgdXBtnbprmkjSNZpHLvpBrKzRBbDWrgQBShmpwNLxNCxL'>
+                                <MailOutlined style={{fontSize: "300%", color:'#c62522', paddingLeft: '10px'}}/>
                             </a>
                         </Col>
                     </Col>

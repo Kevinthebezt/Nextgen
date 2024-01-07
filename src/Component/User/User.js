@@ -2,7 +2,8 @@ import React from 'react'
 import { Col, Avatar } from 'antd';
 import { useEffect, useState } from 'react'
 import "../../Css/User.css"
-import { InstagramOutlined, GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
+import { InstagramOutlined, MailOutlined, FacebookOutlined } from "@ant-design/icons";
+
 import userImg from "../../images/user.png"
 
 const User = ({ user }) => {
@@ -40,9 +41,15 @@ const User = ({ user }) => {
                         <h2>{user?.userName}</h2>
                         <div className="desc">Email: &nbsp;{user?.email}</div>
                         <div className="actions">
-                            <button><FacebookOutlined /></button>
-                            <button><GoogleOutlined /></button>
-                            <button><InstagramOutlined /></button>
+                            <a href='https://www.instagram.com/kvintebet/'>
+                                <InstagramOutlined style={{ fontSize: "200%", color: '#b1014c' }} />
+                            </a>
+                            <a href='https://www.facebook.com/profile.php?id=100040202079254'>
+                                <FacebookOutlined style={{ fontSize: "200%", color: '#0866ff', paddingLeft: '5px' }} />
+                            </a>
+                            <a href='https://mail.google.com/mail/u/0/#inbox?compose=jrjtXDzgdjwvSRpsgrCJCJtPpSkgdXBtnbprmkjSNZpHLvpBrKzRBbDWrgQBShmpwNLxNCxL'>
+                                <MailOutlined style={{ fontSize: "200%", color: '#c62522', paddingLeft: '5px' }} />
+                            </a>
                         </div>
                     </div>
                 </div>
