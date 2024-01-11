@@ -38,6 +38,10 @@
   }
 }
 
-.ant-qrcode {
-  background-color: white !important;
+.about-container{
+  box-shadow: 2px 2px 2px 2px orange !important;
+}
+
+.about-container p{
+  padding-top: 20px;
 }

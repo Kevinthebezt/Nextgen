@@ -150,20 +150,20 @@ function Content({ user, notification, addToCart }) {
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'right', alignItems: 'center', padding: '20px 0', flexWrap: 'wrap' }}>
                     <Col>
                     <Row style={{paddingTop: '10px'}}>
-                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingRight: 20 }}>
-                        <span style={{ color: 'white', paddingRight: 10 }}>Search Game</span>
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        {/* <span style={{ color: 'white', paddingRight: 10 }}>Search Game</span> */}
                         <Search
                             placeholder="Enter name game"
                             onSearch={request}
                             style={{
-                                width: 191,
+                                width: 216,
                             }}
                         />
                     </div>
                     </Row>
                     <Row style={{paddingTop: '10px'}}>
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <span style={{ color: 'white', paddingRight: 10}}>Category</span>
+                        {/* <span style={{ color: 'white', paddingRight: 10}}>Category</span> */}
                         <TreeSelect
                             style={{
                                 minWidth: '200px',

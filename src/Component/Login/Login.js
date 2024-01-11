@@ -163,8 +163,8 @@ const Login = ({ notification }) => {
                             <p plain style={{color: 'white'}}>-----   Or   -----</p>
                             <Col>
                                 <Row span={12}>
-                                    <Button htmlType='button' style={{ marginTop: 10, fontWeight: 'bold', textDecoration: 'none', display: 'flex', justifyContent: 'center' }} onClick={handleGoogleLogin}>
-                                        Google
+                                    <Button htmlType='button' style={{ marginTop: 10, fontWeight: 'bold', textDecoration: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center' }} onClick={handleGoogleLogin}>
+                                        <GoogleOutlined />
                                     </Button>
                                 </Row>
                                 <Row span={12}>

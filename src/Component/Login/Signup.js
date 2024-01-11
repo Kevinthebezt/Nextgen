@@ -7,7 +7,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import { Button, Carousel, Form, Input, Card } from 'antd';
 import { Col, Row } from 'antd';
-import { UserOutlined, LockOutlined, MailOutlined } from "@ant-design/icons";
+import { UserOutlined, LockOutlined, MailOutlined, GoogleOutlined } from "@ant-design/icons";
 
 
 
@@ -206,8 +206,8 @@ const Signup = ({ notification, setReload }) => {
                                     {/* <a type="primary" style={{ marginTop: 10, color: '#bdbdbd', fontWeight: 'bold', textDecoration: 'none', display: 'flex', justifyContent: 'right' }} onClick={handleGoogleLogin}>
                                         Google
                                     </a> */}
-                                    <Button htmlType='button' style={{ marginTop: 10, fontWeight: 'bold', textDecoration: 'none', display: 'flex', justifyContent: 'center' }} onClick={handleGoogleLogin}>
-                                        Google
+                                    <Button htmlType='button' style={{ marginTop: 10, fontWeight: 'bold', textDecoration: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center' }} onClick={handleGoogleLogin}>
+                                    <GoogleOutlined />
                                     </Button>
                                 </Row>
                                 {/* <Row span={8}>
