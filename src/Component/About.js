@@ -38,7 +38,7 @@ const About = () => {
     }, []);
 
     return (
-        <div className='about-container' style={{ display: 'flex', flexDirection: 'column', margin: 120, marginBottom: 30, marginTop: 30, padding: 50, alignItems: 'center', backgroundColor: '#121212', borderRadius: '3%', color: '#bdbdbd', fontSize: 20 }}>
+        <div className='about-container' style={{ display: 'flex', flexDirection: 'column', margin: 120, marginBottom: 30, marginTop: 30, padding: 50, alignItems: 'center', backgroundColor: '#121212', borderRadius: '3%', color: '#a1a7a7', fontSize: 20 }}>
             <p>Welcome to RevoltGRep, your ultimate destination for an unparalleled gaming experience! At RevoltGRep, we understand the passion and excitement that gaming brings to life, and we're thrilled to introduce a revolutionary game renting platform designed with gamers in mind.</p>
             <p>Dive into a world where gaming knows no bounds, and the possibilities are as vast as your imagination. Whether you're a seasoned gamer looking to explore new titles or a casual player eager to try out the latest releases, RevoltGRep is here to redefine how you access and enjoy your favorite games.</p>
             <p>Our platform boasts an extensive and ever-growing library of the hottest and most sought-after titles across various gaming platforms. From action-packed adventures to immersive simulations, we've curated a diverse collection to cater to every gaming preference.</p>
