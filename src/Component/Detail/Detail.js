@@ -66,7 +66,7 @@ function Detail({ match, user, notification, addToCart }) {
     }, []);
 
     return (
-        <div style={{ margin: '0', padding: '0 50px' }}>
+        <div style={{ margin: '0' }}>
             <h2 style={{ color: 'white' }}>{data?.title}</h2>
 
             <Row wrap={true}>
@@ -145,7 +145,7 @@ function Detail({ match, user, notification, addToCart }) {
                     </Row>
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Button className='btn' type="primary" block onClick={() => addToCart(data)}>
-                            <PlaySquareOutlined /> PLAY NOW
+                            <PlaySquareOutlined /> ADD TO CART
                         </Button>
                     </div>
                 </Col>
@@ -203,7 +203,6 @@ function Detail({ match, user, notification, addToCart }) {
                     <PlaySquareOutlined /> PLAY NOW
                 </Button>
             </div> */}
-            <p className='Footer'>Phát triển bởi © RevoltG</p>
         </div>
     )
 
