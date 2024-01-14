@@ -6,6 +6,10 @@
 }
 
 .ant-menu-overflow {
-    background-color: #191c22;
-    color: #ada59c;
+    background-color: #1e1e1e;
+    color: #a1a7a7;
+}
+
+.ant-menu-item-selected {
+    color: black !important;
 }
